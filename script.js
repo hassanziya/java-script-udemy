@@ -166,3 +166,113 @@ console.log(firstName + " " + lastName);*/
 // if (height == "23") {
 //   console.log("the == operator does type coercion");
 // }
+
+/**
+ ***********Functions***************
+ */
+
+// function calculateAge(birthYear) {
+//   return 2020 - birthYear;
+// }
+
+// var ageJohn = calculateAge(1998);
+// var ageMike = calculateAge(1999);
+// var ageMary = calculateAge(1950);
+
+// console.log(ageJohn, ageMary, ageMike);
+
+// function yearUntillRetirement(year, firstName) {
+//   var age = calculateAge(year);
+//   var retirement = 65 - age;
+//   if (retirement > 0) {
+//     console.log(firstName + " retires in " + retirement + " years.");
+//   } else {
+//     console.log(firstName + " has already  retire ");
+//   }
+// }
+
+// yearUntillRetirement(1999, "hassan");
+// yearUntillRetirement(1990, "john");
+// yearUntillRetirement(1950, "mary");
+
+/**
+ *********Function Expression And Satement**********
+ */
+
+// var whatDoYouDo = function (job, firstName) {
+//   switch (job) {
+//     case "teacher":
+//       return firstName + " teaches kids how to code";
+//     case "Deriver":
+//       return firstName + " derives a cab in london";
+
+//     case "designer":
+//       return firstName + " design beautiful websites";
+//     default:
+//       return firstName + " does something else";
+//   }
+// };
+
+// console.log(whatDoYouDo("teacher", "john"));
+// console.log(whatDoYouDo("designer", "Mike"));
+// console.log(whatDoYouDo("acting", "mary"));
+
+/**
+ ************Arrays*************
+ */
+
+// var names = ["john", "mark", "jane"];
+// var year = new Array(1990, 1969, 1948);
+// console.log(names[0]);
+// console.log(names.length);
+
+// names[1] = "Ben";
+// names[names.length] = "mary";
+// names.push("ziya");
+// names.unshift("hassan");
+// console.log(names);
+// console.log(names.indexOf("ziya"));
+
+/**
+ **************Objects and Properties******************
+ */
+
+// var john = {
+//   firstName: "john",
+//   lastName: "Smith",
+//   birthYear: 1990,
+//   family: ["jane", "bob", "Emily"],
+//   job: "teacher",
+//   isMarried: false,
+// };
+// console.log(john.firstName);
+// console.log(john["lastName"]);
+// var x = "birthYear";
+// console.log(john[x]);
+
+// john.job = "designer";
+// john["isMarried"] = true;
+// console.log(john);
+
+// var jane = new Object();
+// jane.name = "jane";
+// jane["lastName"] = "Smith";
+// jane.birthYear = 1990;
+// console.log(jane);
+
+/**
+ *********Objects And Methods*************8
+ */
+// var john = {
+//   firstName: "john",
+//   lastName: "Smith",
+//   birthYear: 1999,
+//   family: ["jane", "bob", "Emily"],
+//   job: "teacher",
+//   isMarried: false,
+//   calcAge: function (birthYear) {
+//     this.age = 2020 - this.birthYear;
+//   },
+// };
+// john.calcAge();
+// console.log(john);
